@@ -4,13 +4,15 @@
     padding: 0;
 }
 body{
-    background: #fafafa;
+    background: #494040;
 }
 .container{
     max-width: 1200px;
     min-height: 100vh;
+    margin: auto;
 }
 .main{
-    font-style: 35px;
-    color: green;
+    font-size: 35px;
+    color: rgb(221, 221, 221);
+    padding: 20px 0 0;
 }
