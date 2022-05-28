@@ -101,7 +101,7 @@ body{
 }
 .home__img{
     height: 385px;
-    background: url(/img/cover.jpg);
+    background: url(../img/cover.jpg);
     background-repeat: inherit;
     background-size: cover;
     background-position: center;
