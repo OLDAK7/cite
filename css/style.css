@@ -1,19 +1,20 @@
 @import 'null.css';
+@import 'slider.css';
 @font-face {
     font-family: 'Gilroy';
-    src: url(/fonts/Gilroy-Medium.eot);
-    src: url(/fonts/Gilroy-Medium.woff) format('woff'),
-         url(/fonts/Gilroy-Medium.woff2) format('woff2'),
-         url(/fonts/Gilroy-Medium.ttf) format('truetype');
+    src: url(../fonts/Gilroy-Medium.eot);
+    src: url(../fonts/Gilroy-Medium.woff) format('woff'),
+         url(../fonts/Gilroy-Medium.woff2) format('woff2'),
+         url(../fonts/Gilroy-Medium.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Gilroy';
-    src: url(/fonts/Gilroy-Bold.eot);
-    src: url(/fonts/Gilroy-Bold.woff) format('woff'),
-         url(/fonts/Gilroy-Bold.woff2) format('woff2'),
-         url(/fonts/Gilroy-Bold.ttf) format('truetype');
+    src: url(../fonts/Gilroy-Bold.eot);
+    src: url(../fonts/Gilroy-Bold.woff) format('woff'),
+         url(../fonts/Gilroy-Bold.woff2) format('woff2'),
+         url(../fonts/Gilroy-Bold.ttf) format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -27,11 +28,29 @@ body{
 }
 .title{
     font-size: 34px;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
 .title::first-letter{
     text-transform: capitalize;
+}
+.text{
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+}
+
+/* общие флексы */
+
+.home__description,
+.nav__list{
+    display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+    display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 /* навигация */
@@ -49,14 +68,6 @@ body{
     margin: 25px auto 0 auto;;
 }
 .nav__list {
-    display: flex;
-    display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-    justify-content: space-between;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
     color: #828282;
     font-size: 18px;
     line-height: 22px;
@@ -72,18 +83,10 @@ body{
     height: 620px;
 }
 .home__description{
-    display: flex;
-    display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-    justify-content: space-between;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	-ms-flex-pack: justify;
-    align-items: center;
     -webkit-box-align: center;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
+    align-items: center;
 }
 .home__description h1{
     font-size: 47px;
@@ -98,10 +101,11 @@ body{
 }
 .home__description p:last-child{
     color: #828282;
+    transform: rotate(-90deg);
 }
 .home__img{
     height: 385px;
-    background: url(/img/cover.jpg);
+    background: url(../img/cover.jpg);
     background-repeat: inherit;
     background-size: cover;
     background-position: center;
@@ -120,8 +124,6 @@ body{
 }
 
 .about__text{
-    font-size: 18px;
-    line-height: 22px;
     max-width: 485px;
     margin: 0 auto;
 }
@@ -131,6 +133,82 @@ body{
 .about__text p:last-child{
     margin-top: 30px;
 }
+
+/* skills */
+.skills{
+    text-align: center;
+    padding: 90px 0;
+}
+.skills__title{
+    margin-bottom: 70px;
+}
+.skills__text {
+    margin-bottom: 85px;
+}
+
+/* portfolio  */
+.portfolio{
+    background: #F6F6F6;
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 95px;
+}
+.portfolio__title{
+    margin-bottom: 55px;
+}
+.portfolio-item{
+    margin-bottom: 100px;
+}
+.portfolio-item:last-child{
+    margin-bottom: 0;
+}
+.portfolio-item__img{
+    margin-bottom: 45px;
+}
+.portfolio-item__title{
+    text-decoration: underline;
+}
+.portfolio-item__title::first-letter,
+.contacts__text::first-letter,
+.contacts__btn::first-letter,
+.contacts__suptext::first-letter {
+    text-transform: uppercase;
+}
+
+/* contacts */
+.contacts{
+    text-align: center;
+    padding: 115px 0;
+}
+.contacts__title{
+    margin-bottom: 30px;
+}
+.contacts__text{
+    margin-bottom: 40px;
+}
+.contacts__suptext{
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    margin-top: 45px;
+}
+.contacts__btn a {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    background: #070707;
+    color: #ffffff;
+    width: 180px;
+    height: 43px;
+    border: 1px solid #070707;
+    border-radius: 30px;
+    padding: 13px 30px;
+}
+.contacts__btn a:hover{
+    background: #828282;
+}
+
+
 
 
 

@@ -54,6 +54,7 @@ a:not([class]) {
 img {
   max-width: 100%;
   display: block;
+  margin: 0 auto;
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
@@ -68,6 +69,7 @@ textarea,
 select {
   font: inherit;
 }
+
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
