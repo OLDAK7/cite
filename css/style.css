@@ -196,6 +196,7 @@ body{
 .portfolio-item__title{
     text-decoration: underline;
     transform: rotateY(180deg);
+    background: #fff;
 }
 .portfolio-item__title::first-letter,
 .contacts__text::first-letter,
@@ -241,6 +242,91 @@ body{
 }
 .contacts__btn a:hover{
     background: #828282;
+}
+
+/*contacts-modal */ 
+.modal{
+    max-width: 400px;
+    max-height: 130px;
+    /* padding: 20px 10px; */
+    border-radius: 4px;
+    background: #F6F6F6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 99999999;
+    text-align: center;
+}
+.modal .modal-block__close {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    right: 7px;
+    cursor: pointer;
+    display: block;
+    color: #000;
+    font-size: 20px;
+}
+.modal-overlay {
+    z-index: 9999999;
+    position: fixed;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+.modal__item svg {
+    width: 50px;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .modal {
+        width: auto;
+        min-width: 575px;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .modal {
+        width: auto;
+        min-width: auto;
+    }
+    .modal-block__p {
+        padding: 0 80px;   
+    }
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+    .modal-block__p {
+        padding: 0 30px;
+    }
 }
 
 
