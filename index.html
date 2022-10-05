@@ -10,15 +10,36 @@
     
 </head>
 <body>
-	<nav class="nav">
+	<nav class="nav nav__lg">
 		<div class="container">
 			<ul class="nav__list">
-				<li><a href="">home</a></li>
-				<li><a href="">about me</a></li>
-				<li><a href="">skills</a></li>
-				<li><a href="">portfolio</a></li>
-				<li><a href="">contacts</a></li>
+				<li><a href="#">home</a></li>
+				<li><a href="#about_me">about me</a></li>
+				<li><a href="#skills">skills</a></li>
+				<li><a href="#portfolio">portfolio</a></li>
+				<li><a href="#contacts">contacts</a></li>
 			</ul>
+		</div>
+	</nav>
+	<nav class="nav nav__sm">
+		<div class="container">
+			<div class="mobile">
+				<div>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<nav id="moba">
+					<ul>
+						<li><a href="#">home</a></li>
+						<li><a href="#about_me">about me</a></li>
+						<li><a href="#skills">skills</a></li>
+						<li><a href="#portfolio">portfolio</a></li>
+						<li><a href="#contacts">contacts</a></li>
+					</ul>
+					<p><a href="">ru</a> | <a href="">eng</a></p>
+				</nav>
+			</div>
 		</div>
 	</nav>
 	<div class="home">
@@ -31,7 +52,7 @@
 			<div class="home__img"></div>
 		</div>
 	</div>
-	<div class="about">
+	<div class="about" id="about_me">
 		<div class="container">
 			<div class="about__title title">
 				about me
@@ -45,7 +66,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="skills">
+	<div class="skills" id="skills">
 		<div class="container">
 			<div class="skills__title title">
 				skills
@@ -200,7 +221,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="portfolio">
+	<div class="portfolio" id="portfolio">
 		<div class="container">
 			<div class="portfolio__title title">
 				portfolio
@@ -231,7 +252,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="contacts">
+	<div class="contacts" id="contacts">
 		<div class="container">
 			<div class="contacts__title title">
 				contacts

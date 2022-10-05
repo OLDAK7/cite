@@ -46,5 +46,45 @@ $(document).ready(function() {
                 $('#myOverlay').fadeOut(297);
             });
     });
+
+    // anchors
+    $(function () {
+        $('a[href^="#about_me"]').click(function () {
+            var _href = $(this).attr("href");
+            $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+            return false;
+        });
+        $('a[href^="#skills"]').click(function () {
+            var _href = $(this).attr("href");
+            $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+            return false;
+        });
+        $('a[href^="#portfolio"]').click(function () {
+            var _href = $(this).attr("href");
+            $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+            return false;
+        });
+        $('a[href^="#contacts"]').click(function () {
+            var _href = $(this).attr("href");
+            $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+            return false;
+        });
+    });
+
+    // nav fix
+    $(document).scroll(function (e) {
+        $(window).scrollTop() > 100 ? $('.nav').addClass('nav_color') : $('.nav').removeClass('nav_color');
+    });
+
+    // burger
+    $('.mobile div').on('click', () => {
+        $('.mobile div').toggleClass('active');
+        $('.mobile nav').toggleClass('open');
+        $('.mobile nav ul').toggleClass('show');
+    });
+    for (let a = 1; a <= $(".mobile ul li").length; a++) {
+        $(".mobile ul li:nth-child(" + a + ")").css("animation-delay", "." + (a + 1) + "s");
+    }
+    
 });
 
