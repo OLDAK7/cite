@@ -467,7 +467,7 @@ body {
 }
 @media (min-width: 768px) {
   .nav__lg {
-    display: flex !important;
+    display: block !important;
   }
   .nav__sm {
     display: none !important;
